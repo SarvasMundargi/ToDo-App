@@ -58,6 +58,7 @@ class MainActivity : AppCompatActivity(), TaskAdapter.ITaskAdapter {
         else{
             taskdao.addTask(text)
             Toast.makeText(this,"Task Added",Toast.LENGTH_SHORT).show()
+            binding.etEnterTasks.text.clear()
         }
     }
 
